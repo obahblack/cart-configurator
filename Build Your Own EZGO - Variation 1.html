@@ -11,7 +11,7 @@
 <!-- BRAND FONT (source of truth): Plus Jakarta Sans for BOTH headings and body/UI. Roboto is NOT used on Guild. Do not substitute. -->
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <!-- ICONOGRAPHY: Phosphor only. Lucide is banned for this brand. -->
-<script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script><link rel="preload" as="image" href="Assets/WebP/carts/2019-platinum.webp" type="image/webp" fetchpriority="high">
+<script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script><link rel="preload" as="image" href="https://raw.githubusercontent.com/obahblack/cart-configurator/main/Assets/WebP/carts/2019-platinum.webp" type="image/webp" fetchpriority="high">
 <style>
 /* ===== Guild Design System: tokens + base (verbatim) ===== */
 :root {
@@ -2696,7 +2696,7 @@ Bend OR, 97701 </p></div></div></div></div></div></a><a class="elementor-element
     <div class="stage" id="stage1" role="group" aria-label="Your cart">
       <div class="stage1__cart">
         <div class="cart2" id="cart1">
-          <img class="cart2__img" src="Assets/WebP/carts/2019-platinum.webp" alt="2019 EZGO RXV Elite golf cart with its used body">
+          <img class="cart2__img" src="https://raw.githubusercontent.com/obahblack/cart-configurator/main/Assets/WebP/carts/2019-platinum.webp" alt="2019 EZGO RXV Elite golf cart with its used body">
         </div>
       </div>
     </div>
@@ -2840,7 +2840,7 @@ Our friendly team is available to answer any other questions or provide addition
   ];
   /* model photos: one per model year and body colour (a used body shows Platinum).
      Served as WebP on one shared canvas; thumbs/ holds the 360px versions for lists. */
-  var CARTS = 'Assets/WebP/carts/';
+  var CARTS = 'https://raw.githubusercontent.com/obahblack/cart-configurator/main/Assets/WebP/carts/';
   var SLUG = { platinum: 'platinum', inferno: 'inferno-red', patriot: 'patriot-blue', electric: 'electric-blue', white: 'white', charcoal: 'charcoal', black: 'black' };
   function cartImg(model, color, thumb) { return CARTS + (thumb ? 'thumbs/' : '') + model + '-' + SLUG[color || 'platinum'] + '.webp'; }
   function cartFor(s, thumb) { return cartImg(s.model, s.body === 'new' ? s.color : 'platinum', thumb); }
